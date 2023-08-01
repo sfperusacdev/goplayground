@@ -15,6 +15,7 @@ func main() {
 	if err != nil {
 		log.Fatalln(err)
 	}
+
 	fn, ok := symbol.(func(s string))
 	if !ok {
 		fmt.Println("unexpected type from module")
